@@ -7,6 +7,16 @@ ZoomMtg.preLoadWasm();
 ZoomMtg.prepareWebSDK();
 
 function App() {
+  useEffect(() => {
+    // Function to call on page load
+    const onPageLoad = () => {
+        console.log('Page is loaded!');
+        // Add your logic here
+    };
+
+    // Call the function on page load
+    onPageLoad();
+}, []);
   const queryParameters = new URLSearchParams(window.location.search)
   const roomId = queryParameters.get("roomId")
   const role = queryParameters.get("role")
@@ -78,7 +88,7 @@ function App() {
     <div className="App">
       <main>
         <h1>Zoom Meeting SDK Sample React</h1>
-        {getSignature()}
+       const signature =  {getSignature()}
         {/* <button onClick={getSignature}>Join Meeting</button> */}
       </main>
     </div>
