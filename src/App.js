@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+//import { useLocation } from 'react-router-dom';
 
 import './App.css';
 import { ZoomMtg } from '@zoom/meetingsdk';
@@ -8,8 +8,8 @@ ZoomMtg.preLoadWasm();
 ZoomMtg.prepareWebSDK();
 
 function App() {
-  const location = useLocation();
-  const queryParams = new URLSearchParams(location.search);
+  //const location = useLocation();
+  //const queryParams = new URLSearchParams(location.search);
   console.log('hello')
   console.log(queryParams)
   var authEndpoint = 'https://us-central1-edress-morecreatives-net.cloudfunctions.net/getZoomSignature'
