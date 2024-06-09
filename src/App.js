@@ -78,8 +78,8 @@ function App() {
     <div className="App">
       <main>
         <h1>Zoom Meeting SDK Sample React</h1>
-
-        <button onClick={getSignature}>Join Meeting</button>
+        {getSignature}
+        {/* <button onClick={getSignature}>Join Meeting</button> */}
       </main>
     </div>
   );
