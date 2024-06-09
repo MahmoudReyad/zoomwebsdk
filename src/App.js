@@ -78,7 +78,7 @@ function App() {
     <div className="App">
       <main>
         <h1>Zoom Meeting SDK Sample React</h1>
-       const signature =  {getSignature()}
+        {getSignature()}
         {/* <button onClick={getSignature}>Join Meeting</button> */}
       </main>
     </div>
