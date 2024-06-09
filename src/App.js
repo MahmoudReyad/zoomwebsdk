@@ -8,14 +8,14 @@ ZoomMtg.prepareWebSDK();
 
 function App() {
   const queryParameters = new URLSearchParams(window.location.search)
-  const name = queryParameters.get("name")
-  console.log(name);
+  const roomId = queryParameters.get("roomId")
+  const role = queryParameters.get("role")
+  console.log(roomId , role);
   console.log('hello')
   var authEndpoint = 'https://us-central1-edress-morecreatives-net.cloudfunctions.net/getZoomSignature'
   var sdkKey = 'iZLiYUrLTAeli5i2Y4H1kg'
-  var meetingNumber = '85729565236'
+  var meetingNumber = roomId
   var passWord = ''
-  var role = "1"
   var userName = 'Student 4'
   var userEmail = 'mahmoud@gmail.com'
   var registrantToken = ''
