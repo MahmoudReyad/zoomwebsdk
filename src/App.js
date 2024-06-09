@@ -10,6 +10,7 @@ ZoomMtg.prepareWebSDK();
 function App() {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
+  console.log('hello')
   console.log(queryParams)
   var authEndpoint = 'https://us-central1-edress-morecreatives-net.cloudfunctions.net/getZoomSignature'
   var sdkKey = 'iZLiYUrLTAeli5i2Y4H1kg'
