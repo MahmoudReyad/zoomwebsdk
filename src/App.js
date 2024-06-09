@@ -23,7 +23,7 @@ function App() {
   var leaveUrl = '/'
 
   function getSignature(e) {
-    e.preventDefault();
+    //e.preventDefault();
 
     fetch(authEndpoint, {
       method: 'POST',
